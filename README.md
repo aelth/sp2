@@ -64,6 +64,12 @@ This is the mail that will be sent to configured email address (usually security
 
 ![Forwarded email](https://i.imgur.com/Oxhs9cz.png)
 
+# Uninstall
+
+If you want to uninstall **SP^2**, you can use either Outlook Add-In dialog or the following command (modify if needed):
+```
+C:\Program Files\Common Files\microsoft shared\VSTO\10.0\VSTOInstaller.exe" /uninstall <path_to_vsto>
+```
 
 # Similar projects
 
