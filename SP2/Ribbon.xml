@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabMail"  insertBeforeMso="GroupQuickSteps">
+        <group id="mainGroup" insertBeforeMso="GroupQuickSteps" label="SP2">
+          <button id="reportPhishingBtn" 
+                  size="large" 
+                  getImage="GetButtonImage" 
+                  showImage="true" 
+                  onAction="ReportPhishing_Click" 
+                  label="Report spam/phishing" 
+                  description="Report suspicious email by forwarding the email to your incident response/helpdesk team" 
+                  screentip="Report suspicious email" 
+                  supertip="Selected email (or multiple selected emails) will be forwarded to your incident response/helpdesk team for further analysis"
+                  />
+        </group>
+      </tab>
+      <tab idMso="TabReadMessage" insertBeforeMso="GroupQuickSteps">
+        <group id="msgGroup" insertBeforeMso="GroupQuickSteps" label="SP2">
+          <button id="reportPhishingBtn2"
+                  size="large"
+                  getImage="GetButtonImage"
+                  showImage="true"
+                  onAction="ReportPhishing_Click"
+                  label="Report spam/phishing" 
+                  description="Report suspicious email by forwarding the email to your incident response/helpdesk team" 
+                  screentip="Report suspicious email" 
+                  supertip="Selected email (or multiple selected emails) will be forwarded to your incident response/helpdesk team for further analysis"
+                  />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+  <contextMenus>
+    <contextMenu idMso="ContextMenuMailItem">
+      <menuSeparator id="ContextMenuSeparator" />
+        <button id="ctxMenuMailItem"
+                getImage="GetButtonImage"
+                onAction="ReportPhishing_Click"
+                label="Report spam/phishing" 
+                description="Report suspicious email by forwarding the email to your incident response/helpdesk team" 
+                />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuMultipleItems">
+      <menuSeparator id="ContextMenuSeparatorMultipleItems" />
+        <button id="ctxMenuMailItems"
+                getImage="GetButtonImage"
+                onAction="ReportPhishing_Click"
+                label="Report spam/phishing"
+                description="Report suspicious emails by forwarding the emails to your incident response/helpdesk team"
+                />
+    </contextMenu>
+  </contextMenus>
+</customUI>

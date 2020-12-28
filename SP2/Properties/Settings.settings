@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SP2.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="report_email" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Your IR team &lt;cert@company.com&gt;</Value>
+    </Setting>
+    <Setting Name="report_email_cc" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="subject_prefix" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[SUSPICIOUS EMAIL - SP2]</Value>
+    </Setting>
+    <Setting Name="body_start" Type="System.String" Scope="User">
+      <Value Profile="(Default)">This email was forwarded using SP2 Outlook plugin. Message body and attachment contain additional information about the forwarded email(s).</Value>
+    </Setting>
+    <Setting Name="body_plaintext" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="extract_links" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="delete_message" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="parse_headers" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
